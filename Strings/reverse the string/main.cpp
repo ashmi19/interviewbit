@@ -32,6 +32,26 @@ string Solution::solve(string A)
     return ans;
 
 }
+/// USING STRING STREAM
+
+string Solution::solve(string A)
+{
+    string ans = "" , w;
+    stringstream ss(A);
+    while(ss >> w)
+    {
+      ans = " " + w + ans;
+    }
+    return ans.substr(1);
+}
+
+
+
+
+
+
+
+
 
 
 
